@@ -1,0 +1,6 @@
+{
+    "shipment_id": 123,
+    "status": "OutForPickup",
+    "enterprise_id": 12,
+    "timestamp": "2020-06-25 13:00:00"
+}

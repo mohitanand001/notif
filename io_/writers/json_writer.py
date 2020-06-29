@@ -9,6 +9,4 @@ class JsonWriter(Writer):
 
     def write(self, path, data: dict):
         with open(path, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4)        
-
-        
+            json.dump(data, f, indent=4)

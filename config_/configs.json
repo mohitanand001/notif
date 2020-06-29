@@ -1,0 +1,40 @@
+{
+    "12": {
+    "enterprise_id" : 12,
+    "status": ["OutForPickup", "Shipped", "Delivered"],
+    "channels" : {
+        "email": {
+            "gateways": [
+                "MailChimp",
+                "SendGrid"
+            ]
+        },
+        "sms": {
+            "gateways": [
+                "GupShup",
+                "Twilio"
+            ]
+        }
+    }
+},
+
+"456": {
+    "enterprise_id" : 456,
+    "status": ["OutForPickup", "Shipped", "Delivered"],
+    "channels" : {
+        "email": {
+            "gateways": [
+                "MailChimp",
+                "SendGrid"
+            ]
+        },
+        "sms": {
+            "gateways": [
+                "GupShup",
+                "Twilio"
+            ]
+        }
+    }
+}
+
+}

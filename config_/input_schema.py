@@ -1,4 +1,3 @@
-
 SHIPMENT_ID = "shipment_id"
 STATUS = "status"
 ENTERPRISE_ID = "enterprise_id"
@@ -12,8 +11,8 @@ _args_type = {
 }
 
 _args_bound = {
-    SHIPMENT_ID: [1, ],
+    SHIPMENT_ID: [1,],
     STATUS: ["OutForPickup", "Delivered"],
-    ENTERPRISE_ID: [1, ],
+    ENTERPRISE_ID: [1,],
     TIMESTAMP: [],
 }
