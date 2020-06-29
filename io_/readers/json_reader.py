@@ -1,6 +1,7 @@
-from io.read_write import Reader
+from io_.read_write import Reader
 
 import json
+
 
 class JsonReader(Reader):
     def __init__(self):
@@ -8,10 +9,5 @@ class JsonReader(Reader):
 
     def read(self, path):
         with open(path) as f:
-            self._inp = json.loads(f)
+            self._inp = json.loads(f.read())
         return self._inp
-            
-
-    
-
-
