@@ -14,8 +14,7 @@ def configure_logging_util(config_file_path: str):
 
     Args:
         config_file_path (str): The path for file containing the configuration.
-    """    
-
+    """
 
     with open(config_file_path, "r") as logging_json_config_f:
         try:

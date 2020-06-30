@@ -8,7 +8,8 @@ logger = logging.getLogger(__name__)
 
 class JsonReader(Reader):
     """Simple Json Reader class.
-    """    
+    """
+
     def __init__(self):
         self._inp = None
 
@@ -20,7 +21,7 @@ class JsonReader(Reader):
 
         Returns:
             json: json output after reading.
-        """        
+        """
 
         with open(path) as f:
             try:

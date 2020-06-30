@@ -1,26 +1,34 @@
+"""Preprocessing utilities
+"""
+
 from io_.readers.json_reader import JsonReader
 
 
-class Preprocess:
-    """Simple preprocessing functionalities.
-    """    
-    def __init__(self):
-        pass
+def _preprocess(data: dict, config_path="./config_/configs.json"):
+    """preprocess data to attach values like channels and gateway to it.
 
-    def _preprocess(self, data, config_path="./config_/configs.json"):
-        _enterprise_id = str(data["enterprise_id"])
-        _status = data["status"]
+    Args:
+        data (dict): input data
+        config_path (str, optional): config_file path where config
+        for each enterprise channel and gateway is kept.
+         Defaults to "./config_/configs.json".
 
-        try:
-            print(_enterprise_id)
-            _processed = JsonReader().read(config_path)[_enterprise_id]
-        except KeyError as e:
-            return None
+    Returns:
+        dict: data with additional information.
+    """
+    _enterprise_id = str(data["enterprise_id"])
+    _status = data["status"]
 
-        if _status not in _processed["status"]:
-            return None
+    try:
+        print(_enterprise_id)
+        _processed = JsonReader().read(config_path)[_enterprise_id]
+    except KeyError:
+        return None
 
-        print(_processed)
+    if _status not in _processed["status"]:
+        return None
 
-        data["channels"] = _processed["channels"]
-        return data
+    print(_processed)
+
+    data["channels"] = _processed["channels"]
+    return data

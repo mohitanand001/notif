@@ -3,19 +3,18 @@ import logging
 from io_.readers.json_reader import JsonReader
 from io_.writers.json_writer import JsonWriter
 
-from preproc.preproc import Preprocess
+from preproc.preproc_main import PreprocessMain
 from logger_.configure_logging import configure_logging
 
 
 class Notify:
-
     def __init__(self, rd_path: str, wrt_path: str):
         """Simple notification writer.
 
         Args:
             rd_path (str): path from which input json is read.
             wrt_path (str): path to which output is written.
-        """        
+        """
         self.read_path = rd_path
         self.write_path = wrt_path
         self._data = JsonReader().read(self.read_path)
@@ -26,7 +25,7 @@ class Notify:
             "Return processed data after adding information about "
             + "channels and gateways."
         )
-        _processed = Preprocess()._preprocess(data)
+        _processed = PreprocessMain()._preprocess_worker_main(data)
         return _processed
 
     def _get_enterprise(self):

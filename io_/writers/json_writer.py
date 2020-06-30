@@ -8,7 +8,8 @@ logger = logging.getLogger(__name__)
 
 class JsonWriter(Writer):
     """Simple Json writer
-    """    
+    """
+
     def __init__(self):
         pass
 
@@ -18,7 +19,7 @@ class JsonWriter(Writer):
         Args:
             path (str): path to be written output to.
             data (dict): data in the form of dictionary.
-        """        
+        """
         with open(path, "a", encoding="utf-8") as f:
             try:
                 logging.info(f"Writing data to {path}.")
