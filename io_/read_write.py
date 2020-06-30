@@ -1,4 +1,7 @@
 class Reader:
+    """Simple reader class which is extended by 
+        JsonReader/TextReader/CSVReader 
+    """    
     def __init__(self, _resource_typ):
         self._resource_typ = _resource_typ
 
@@ -7,6 +10,9 @@ class Reader:
 
 
 class Writer:
+    """Simple writer class extended by JSONWriter/
+        TextWriter/CSVWriter.
+    """    
     def __init__(self, _resource_typ):
         self._resource_typ = _resource_typ
 

@@ -1,0 +1,78 @@
+INFO : 2020-06-30 13:00:46,362 : root : Finish configuring logger
+INFO : 2020-06-30 13:02:34,228 : root : Finish configuring logger
+INFO : 2020-06-30 13:02:45,705 : root : Finish configuring logger
+INFO : 2020-06-30 13:02:45,705 : __main__ : Started sending notifications.
+INFO : 2020-06-30 13:19:00,963 : root : Finish configuring logger
+INFO : 2020-06-30 13:19:00,963 : __main__ : Started sending notifications.
+INFO : 2020-06-30 13:19:00,963 : io_.readers.json_reader : Reading input from input.json.
+INFO : 2020-06-30 13:19:00,963 : io_.readers.json_reader : Reading from input.json successful.
+INFO : 2020-06-30 13:19:00,963 : io_.readers.json_reader : Reading input from ./config_/configs.json.
+INFO : 2020-06-30 13:19:00,963 : io_.readers.json_reader : Reading from ./config_/configs.json successful.
+INFO : 2020-06-30 13:21:18,251 : root : Finish configuring logger
+INFO : 2020-06-30 13:21:18,251 : __main__ : Started sending notifications.
+INFO : 2020-06-30 13:21:18,251 : io_.readers.json_reader : Reading input from input.json.
+INFO : 2020-06-30 13:21:18,251 : io_.readers.json_reader : Reading from input.json successful.
+INFO : 2020-06-30 13:21:18,252 : io_.readers.json_reader : Reading input from ./config_/configs.json.
+INFO : 2020-06-30 13:21:18,252 : io_.readers.json_reader : Reading from ./config_/configs.json successful.
+INFO : 2020-06-30 13:21:18,252 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:21:18,252 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:21:18,252 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:21:18,252 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:21:18,252 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:21:18,253 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:21:18,253 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:21:18,253 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:21:18,253 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:21:18,253 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:21:18,253 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:21:18,253 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:21:18,254 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:21:18,254 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:21:18,254 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:21:18,254 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:27:01,795 : root : Finish configuring logger
+INFO : 2020-06-30 13:27:01,795 : __main__ : Started sending notifications.
+INFO : 2020-06-30 13:27:01,795 : io_.readers.json_reader : Reading input from input.json.
+INFO : 2020-06-30 13:27:01,795 : io_.readers.json_reader : Reading from input.json successful.
+INFO : 2020-06-30 13:27:01,795 : __main__ : Return processed data after adding information about channels and gateways.
+INFO : 2020-06-30 13:27:01,795 : io_.readers.json_reader : Reading input from ./config_/configs.json.
+INFO : 2020-06-30 13:27:01,795 : io_.readers.json_reader : Reading from ./config_/configs.json successful.
+INFO : 2020-06-30 13:27:01,795 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:27:01,795 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:27:01,796 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:27:01,796 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:27:01,796 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:27:01,796 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:27:01,796 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:27:01,796 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:27:01,796 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:27:01,796 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:27:01,797 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:27:01,797 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:27:01,797 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:27:01,797 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 13:27:01,797 : root : Writing data to outp.json.
+INFO : 2020-06-30 13:27:01,797 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 14:26:20,200 : root : Finish configuring logger
+INFO : 2020-06-30 14:26:20,200 : __main__ : Started sending notifications.
+INFO : 2020-06-30 14:26:20,200 : io_.readers.json_reader : Reading input from input.json.
+INFO : 2020-06-30 14:26:20,200 : io_.readers.json_reader : Reading from input.json successful.
+INFO : 2020-06-30 14:26:20,200 : __main__ : Return processed data after adding information about channels and gateways.
+INFO : 2020-06-30 14:26:20,201 : io_.readers.json_reader : Reading input from ./config_/configs.json.
+INFO : 2020-06-30 14:26:20,201 : io_.readers.json_reader : Reading from ./config_/configs.json successful.
+INFO : 2020-06-30 14:26:20,201 : root : Writing data to outp.json.
+INFO : 2020-06-30 14:26:20,201 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 14:26:20,201 : root : Writing data to outp.json.
+INFO : 2020-06-30 14:26:20,201 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 14:26:20,201 : root : Writing data to outp.json.
+INFO : 2020-06-30 14:26:20,201 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 14:26:20,202 : root : Writing data to outp.json.
+INFO : 2020-06-30 14:26:20,202 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 14:26:20,202 : root : Writing data to outp.json.
+INFO : 2020-06-30 14:26:20,202 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 14:26:20,202 : root : Writing data to outp.json.
+INFO : 2020-06-30 14:26:20,202 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 14:26:20,202 : root : Writing data to outp.json.
+INFO : 2020-06-30 14:26:20,202 : root : Writing data to outp.json successful.
+INFO : 2020-06-30 14:26:20,202 : root : Writing data to outp.json.
+INFO : 2020-06-30 14:26:20,205 : root : Writing data to outp.json successful.

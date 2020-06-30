@@ -2,6 +2,8 @@ from io_.readers.json_reader import JsonReader
 
 
 class Preprocess:
+    """Simple preprocessing functionalities.
+    """    
     def __init__(self):
         pass
 
