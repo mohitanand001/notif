@@ -21,7 +21,7 @@ class PreprocessMain:
         return processed_data
 
     def _preprocess_worker_main(self, data):
-        self._preprocess_worker(data)
+        return self._preprocess_worker(data)
 
 
 

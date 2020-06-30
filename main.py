@@ -6,10 +6,12 @@ from io_.writers.json_writer import JsonWriter
 from preproc.preproc_main import PreprocessMain
 from logger_.configure_logging import configure_logging
 
+from io_.writer_workers.write_workers_main import WriterWorker
+
 
 class Notify:
     def __init__(self, rd_path: str, wrt_path: str):
-        """Simple notification writer.
+        """Reads input data and preprocesses it.
 
         Args:
             rd_path (str): path from which input json is read.
@@ -25,40 +27,21 @@ class Notify:
             "Return processed data after adding information about "
             + "channels and gateways."
         )
-        _processed = PreprocessMain()._preprocess_worker_main(data)
+        try:
+            _processed = PreprocessMain()._preprocess_worker_main(data)
+        except Exception as e:
+            LOGGER.exception(
+                "Could not preprocess data."
+            )
+            raise e
+
         return _processed
 
-    def _get_enterprise(self):
-        return self._processed_data["enterprise"]
+    def _writer_worker(self):
+        LOGGER.info(f"Writing data begin")
+        WriterWorker().main_driver(self._processed_data, self._data, self.write_path)
+        LOGGER.info(f"Writing data complete.")
 
-    def _get_channels(self):
-        return self._processed_data["channels"]
-
-    @property
-    def enterprise(self):
-        return self._get_enterprise()
-
-    @property
-    def channels(self):
-        return self._get_channels()
-
-    def _write(self):
-        wrtr = JsonWriter()
-
-        if self._processed_data is None:
-            return None
-
-        for channel in self.channels:
-            for gateway in channel:
-                try:
-                    wrtr.write(self.write_path, self._data)
-                except EnvironmentError:
-                    logging.exception(
-                        f"Error occurred while "
-                        + "write data for {channel} - {gateway} combination."
-                    )
-                except Exception as e:
-                    raise e
 
 
 if __name__ == "__main__":
@@ -68,4 +51,4 @@ if __name__ == "__main__":
     LOGGER.info("Started sending notifications.")
 
     ntf = Notify("input.json", "outp.json")
-    ntf._write()
+    ntf._writer_worker()
